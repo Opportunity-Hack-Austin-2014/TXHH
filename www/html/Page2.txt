@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.3/jquery.mobile-1.4.3.min.css" rel="stylesheet" type="text/css" />
+  <!-- Export CSS  -->
+  <style>
+    .ui-opt{
+      width:75%;
+      height:10%;
+       margin-left: auto;
+      margin-right: auto;
+      padding-top: 0%;
+      
+    }
+    label {
+      padding-top : 5%;
+      margin-top: auto;
+      margin-bottom: auto;
+      float: left;
+      width: 35%;
+    }
+    select {
+      padding-left: 10%; 
+      float: left;
+      background-color: blue;
+    }
+    
+    .ui-btn{
+    
+       width: 35%;
+        margin-left: auto;
+      margin-right: auto;
+    }
+    .ui-field-contain{
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+  </style>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+  <!-- Uncomment the following to include cordova in your android project -->
+  <!--<script src="http://jqmdesigner.appspot.com/platforms/android/cordova.js"></script>-->
+  <title>EZo App</title>
+</head>
+
+<body>
+  <!-- Page: home  -->
+  <div id="home" data-role="page">
+    <div role="main" class="ui-content">
+      <img src="https://www.texashumaneheroes.org/wp-content/uploads/logo1-300x112.jpg      ">
+      <div class="ui-field-contain">
+
+        <input type="search" name id="gk-1019LaOL">
+      </div>
+      <div class="ui-field-contain ui-opt">
+        <label for="gk-1019wcGa">Species</label>
+        <select id="gk-1019wcGa" data-theme="a">
+          <option value="option1">Dogs</option>
+          <option value="option1">Cats</option>
+          <option value="option1">Others</option>
+        </select>
+      </div>
+      <div class="ui-field-contain ui-opt">
+        <label for="gk-1019IulI">Location</label>
+        <select id="gk-1019IulI">
+          <option value="option1">Killeen</option>
+          <option value="option1">Leander</option>
+        </select>
+      </div>
+      <div class="ui-field-contain ui-opt">
+        <label for="gk-1019wYUV">Gender</label>
+        <select id="gk-1019wYUV">
+          <option value="option1">Female</option>
+          <option value="option1">Male</option>
+        </select>
+      </div>
+      <div class="ui-field-contain ui-opt">
+        <label for="gk-1019NR2g">Age</label>
+        <select id="gk-1019NR2g">
+          <option value="option1">&lt;1 year</option>
+          <option value="option1">&gt;1 year</option>
+        </select>
+      </div>
+      <a id="Submit" class="ui-btn btn-center">Search</a>
+    </div>
+  </div>
+</body>
+
+</html>
+

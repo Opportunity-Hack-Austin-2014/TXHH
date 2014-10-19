@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.3/jquery.mobile-1.4.3.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+  <!-- Uncomment the following to include cordova in your android project -->
+  <!--<script src="http://jqmdesigner.appspot.com/platforms/android/cordova.js"></script>-->
+  <!-- Export JS  -->
+  <script>
+    $(document).one("pageshow", "#home", function () {
+      var $ele = $("#gk-1019atAu"),
+        url = $ele.attr("loadURL");
+      if (url) {
+        $ele.gk("load", url);
+      }
+    });
+    $(document).on("gkComponentsReady", function (w) {
+      var $ele = $("#gk-1019E6pf");
+      if ($ele.length > 0) {
+        var img = [{
+          "data-src": "http://www.dropmysite.com/images/social/icon-google.png?1386321977"
+        }, {
+          "data-src": "http://www.dropmysite.com/images/social/icon-facebook.png?1386321977"
+        }, {
+          "data-src": "http://www.dropmyemail.com/assets/icon-twitter-963acb3e091cfea4ef6394d6c3b9e388.png"
+        }];
+        $ele.gk("model", img);
+        $ele.gk("onclick", function (e) {
+          alert(e.target);
+        });
+      }
+    });
+  </script>
+  <title>EZo App</title>
+</head>
+
+<body>
+  <!-- Page: home  -->
+  <div id="home" data-role="page">
+    <div role="main" class="ui-content">
+      <div class="ui-field-contain">
+        <label for="gk-1019l2xs">Enter the amount</label>
+        <input type="text" widhth="10" name id="gk-1019l2xs">
+      </div>
+      <div class="ui-field-contain">
+        <label for="gk-1019ro7g">Name</label>
+        <input type="text" name id="gk-1019ro7g">
+      </div>
+      <div class="ui-field-contain">
+        <label for="gk-1019ZQnS">Address</label>
+        <input type="text" name id="gk-1019ZQnS">
+      </div>
+      <div class="ui-field-contain">
+        <label for="gk-1019p6J7">Credit Card Number</label>
+        <input type="text" name id="gk-1019p6J7">
+      </div>
+      <div class="ui-field-contain">
+        <label for="gk-1019KYDg">Expiration Date</label>
+        <input id="gk-1019KYDg" type="date">
+      </div>
+      <div class="ui-field-contain">
+        <label for="gk-1019z3CT">CVV</label>
+        <input type="text" name id="gk-1019z3CT">
+      </div>
+      <a class="ui-btn">Submit</a>
+    </div>
+  </div>
+</body>
+
+</html>
